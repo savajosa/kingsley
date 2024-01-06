@@ -696,7 +696,7 @@ body {
 	flex: 1;
 	min-width: 300px;
 	max-width: 50%;
-		padding: 0 30px 0 30px;
+		padding: 10px 30px 0 30px;
 	box-sizing: border-box;
 	color: white;font-size: 20px;font-family: 'Raleway', sans-serif;font-size: 30px;font-weight: 700;
 }
@@ -708,9 +708,7 @@ body {
 }
 
 /* SLIDESHOW*/
-
 .mySlides {display: none}
-
 /* Slideshow container */
 .slideshow-container {
 	max-width: 1000px;
@@ -718,6 +716,10 @@ body {
 	margin: auto;
   }
   
+.mySlides img{
+	width: 100%;
+}
+
   /* Next & previous buttons */
   .prev, .next {
 	cursor: pointer;
@@ -744,7 +746,6 @@ body {
   .prev:hover, .next:hover {
 	background-color: rgba(0,0,0,0.8);
   }
-
   
   /* Fading animation */
   .fade {
