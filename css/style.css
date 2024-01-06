@@ -6,6 +6,8 @@ body, html {
 	font-weight: 400;
 	width: 100% !important;
 	height: 100% !important;
+	margin: 0;
+	padding: 0;
 }
 h2, h3, h4 {
 	font-family: 'Raleway', sans-serif;
@@ -560,7 +562,7 @@ color: #777;
 /* Footer Section*/
 #footer {
 	background: #f6f6f6;
-	padding: 30px 0;
+	padding: 10px 0;
 }
 #footer p {
 	color: #888;
@@ -578,3 +580,184 @@ color: #777;
 	margin: 50px 0;
 }
 }
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    animation: carousel-animation 50s infinite linear;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    
+    color: black;
+}
+
+/* Keyframes for the sliding animation */
+@keyframes carousel-animation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-300%); /* Adjust based on the number of items */
+    }
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 600px) {
+    .carousel-item {
+        flex: 0 0 100%;
+    }
+}
+
+
+.stars {
+    color: gold;
+    margin-bottom: 10px;
+	font-size: 24px;
+	;
+}
+
+
+.testimonial-text
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-weight: 100;
+	font-size: 15px;
+	
+}
+
+.testimonial-user{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	color:darkblue
+}
+
+.accordion-container {
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 20px auto;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+    background-color: #f9f9f9;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 800px) {
+    .accordion-item {
+        width: 100%;
+    }
+}
+
+.map-container {
+	flex: 1;
+	min-width: 300px;
+	max-width: 50%;
+	height: 450px;
+	padding-left: 20px;
+}
+
+.address-container {
+	flex: 1;
+	min-width: 300px;
+	max-width: 50%;
+		padding: 0 30px 0 30px;
+	box-sizing: border-box;
+	color: white;font-size: 20px;font-family: 'Raleway', sans-serif;font-size: 30px;font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+	.map-container, .address-container {
+		max-width: 100%;
+	}
+}
+
+/* SLIDESHOW*/
+
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+
+  
+  /* Fading animation */
+  .fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+	.prev, .next,.text {font-size: 11px}
+  }
